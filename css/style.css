@@ -7,14 +7,14 @@
   --color-darkgray: #2f303a;
   --color-darkwhite: #f5f4fa;
   --color-silver: #afb1b8;
-  --color-transparent-light: rgba(255, 255, 255, 0.6);
-  --color-transparent-darker: rgba(255, 255, 255, 0.1);
-  --color-transparent-gray: rgba(255, 255, 255, 0.3);
+  --color-transparent-gray-1: rgba(255, 255, 255, 0.6);
+  --color-transparent-gray-2: rgba(255, 255, 255, 0.1);
+  --color-transparent-gray-3: rgba(255, 255, 255, 0.3);
   --color-transparent-overlay: rgba(47, 48, 58, 0.4);
-  --color-transparent-darker-double: rgba(47, 48, 58, 0.8);
+  --color-transparent-gray-5: rgba(47, 48, 58, 0.8);
   --color-transparent-blue: rgba(33, 150, 243, 0.9);
-  --color-transparent-dark: rgba(0, 0, 0, 0.2);
-  --color-transparent-silver: rgba(33, 33, 33, 0.2);
+  --color-transparent-gray-6: rgba(0, 0, 0, 0.2);
+  --color-transparent-gray-7: rgba(33, 33, 33, 0.2);
   --name-font-family-Roboto: Roboto, sans-serif;
   --name-font-family-Raleway: Raleway, sans-serif;
 
@@ -27,17 +27,17 @@
   --color-border-item: var(--color-beige);
   --color-border-black: var(--color-black);
   --color-border-accent: var(--color-blue);
-  --color-border-input: var(--color-transparent-silver);
-  --color-border-input-footer: var(--color-transparent-gray);
+  --color-border-input: var(--color-transparent-gray-7);
+  --color-border-input-footer: var(--color-transparent-gray-3);
   --color-fill-usual: var(--color-silver);
   --color-fill-accent: var(--color-blue);
   --color-fill-light: var(--color-white);
-  --color-bg-transparent-social: var(--color-transparent-darker);
-  --color-text-transparent: var(--color-transparent-light);
-  --color-bg-transparent-direction: var(--color-transparent-darker-double);
+  --color-bg-transparent-social: var(--color-transparent-gray-2);
+  --color-text-transparent: var(--color-transparent-gray-1);
+  --color-bg-transparent-direction: var(--color-transparent-gray-5);
   --color-bg-transparent-overlay: var(--color-transparent-overlay);
   --color-bg-transparent-accent: var(--color-transparent-blue);
-  --color-bg-transparent-backdrop: var(--color-transparent-dark);
+  --color-bg-transparent-backdrop: var(--color-transparent-gray-6);
 
   --color-background-white: var(--color-white);
   --color-backgaround-button: var(--color-darkwhite);
