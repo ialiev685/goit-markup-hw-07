@@ -53,8 +53,8 @@
 body {
   letter-spacing: 0.03em;
   background-color: var(--white-color);
-  color: var(--color-text-primary);
-  font-family: var(--font-family-primary);
+  color: $color-text-primary;
+  font-family: $font-family-primary;
 }
 
 /*container*/
@@ -86,10 +86,10 @@ body {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--color-text-inverse);
+  color: $color-text-inverse;
   border: 0;
 
-  background-color: var(--color-background-accent);
+  background-color: $color-background-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -101,7 +101,7 @@ body {
 .text {
   margin: 0;
 
-  color: var(--color-text-second);
+  color: $color-text-second;
 
   font-weight: 400;
 }
@@ -114,15 +114,15 @@ body {
 /*сылки*/
 .link,
 .logo {
-  font-family: var(--font-family-primary);
+  font-family: $font-family-primary;
   text-decoration: none;
 }
 
 /*логотип*/
 .logo {
-  color: var(--color-text-accent);
+  color: $color-text-accent;
 
-  font-family: var(--font-family-second);
+  font-family: $font-family-second;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -138,7 +138,7 @@ body {
   width: 100%;
   height: 4px;
 
-  background-color: var(--color-text-accent);
+  background-color: $color-text-accent;
   border-radius: 2px;
 }
 
@@ -164,7 +164,7 @@ body {
 
 .social-links .link {
   /* цвет для иконок */
-  color: var(--color-fill-usual);
+  color: $color-fill-usual;
 
   display: flex;
   width: 44px;
@@ -173,14 +173,14 @@ body {
   align-items: center;
   justify-content: center;
 
-  transition: color var(--transition-duration-timing),
-    background-color var(--transition-duration-timing);
+  transition: color $transition-duration-timing,
+    background-color $transition-duration-timing;
 }
 
 .social-links .link:hover,
 .social-links .link:focus {
-  background-color: var(--color-background-accent);
-  color: var(--color-fill-light);
+  background-color: $color-background-accent;
+  color: $color-fill-light;
 }
 
 .social-links .icon-social {
@@ -223,11 +223,11 @@ body {
 }
 
 .header .second-half.up {
-  color: var(--color-text-primary);
+  color: $color-text-primary;
 }
 
 .site-nav .link {
-  color: var(--color-text-primary);
+  color: $color-text-primary;
 
   font-weight: 500;
   font-size: 14px;
@@ -238,11 +238,11 @@ body {
 .link.current {
   position: relative;
 
-  color: var(--color-text-accent);
+  color: $color-text-accent;
 }
 
 .address-nav .link {
-  color: var(--color-text-second);
+  color: $color-text-second;
 
   font-style: normal;
   font-weight: 500;
@@ -253,18 +253,18 @@ body {
 
 .site-nav .link,
 .address-nav .link {
-  transition: color var(--transition-duration-timing);
+  transition: color $transition-duration-timing;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
 .address-nav .link:hover,
 .address-nav .link:focus {
-  color: var(--color-text-accent);
+  color: $color-text-accent;
 }
 
 .header {
-  background-color: var(--color-background-white);
+  background-color: $color-background-white;
 }
 
 .navigation {
@@ -314,8 +314,8 @@ body {
   height: 600px;
   background-image: linear-gradient(
       to right,
-      var(--color-bg-transparent-overlay),
-      var(--color-bg-transparent-overlay)
+      $color-bg-transparent-overlay,
+      $color-bg-transparent-overlay
     ),
     url("../img/studio/bg-order.jpg");
   background-position: center;
@@ -324,7 +324,7 @@ body {
 .section-order .caption {
   margin-bottom: 40px;
 
-  color: var(--color-text-inverse);
+  color: $color-text-inverse;
 
   font-weight: 900;
   font-size: 44px;
@@ -371,7 +371,7 @@ body {
   height: 120px;
   border-radius: 4px;
 
-  background-color: var(--color-bakcground-darkwhite);
+  background-color: $color-bakcground-darkwhite;
 }
 
 /*section-direction*/
@@ -416,8 +416,8 @@ body {
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--color-text-inverse);
-  background-color: var(--color-bg-transparent-direction);
+  color: $color-text-inverse;
+  background-color: $color-bg-transparent-direction;
 }
 
 /*Наша команда*/
@@ -427,7 +427,7 @@ body {
 }
 
 .section-team {
-  background-color: var(--color-bakcground-darkwhite);
+  background-color: $color-bakcground-darkwhite;
 }
 
 .section-team .caption.main {
@@ -503,25 +503,25 @@ body {
 
 .section-clients .link {
   /* цвет для иконок - базовый*/
-  color: var(--color-fill-usual);
+  color: $color-fill-usual;
 
   display: inline-flex;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--color-fill-usual);
+  border: 1px solid $color-fill-usual;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
 
-  transition: color var(--transition-duration-timing),
-    border-color var(--transition-duration-timing);
+  transition: color $transition-duration-timing,
+    border-color $transition-duration-timing;
 }
 
 .section-clients .link:hover,
 .section-clients .link:focus {
-  border-color: var(--color-fill-accent);
+  border-color: $color-fill-accent;
   /* цвет для иконок при наведении*/
-  color: var(--color-fill-accent);
+  color: $color-fill-accent;
 }
 
 .icon-client {
@@ -537,7 +537,7 @@ body {
 }
 
 .footer {
-  background-color: var(--color-background-gray);
+  background-color: $color-background-gray;
 }
 
 .footer .logo {
@@ -546,11 +546,11 @@ body {
 }
 
 .footer .second-half.down {
-  color: var(--color-text-inverse);
+  color: $color-text-inverse;
 }
 
 .footer .text {
-  color: var(--color-text-inverse);
+  color: $color-text-inverse;
 
   width: 231px;
   font-style: normal;
@@ -568,7 +568,7 @@ body {
 }
 
 .container-address .link {
-  color: var(--color-text-transparent);
+  color: $color-text-transparent;
   display: block;
 }
 
@@ -578,11 +578,11 @@ body {
 }
 
 .container-social .link {
-  background-color: var(--color-bg-transparent-social);
+  background-color: $color-bg-transparent-social;
 }
 
 .container-social .icon-social {
-  fill: var(--color-fill-light);
+  fill: $color-fill-light;
 }
 
 .container-social .text,
@@ -594,7 +594,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: var(--color-text-inverse);
+  color: $color-text-inverse;
 }
 
 .footer-form {
@@ -608,14 +608,14 @@ body {
   padding: 15px 16px;
   margin-right: 12px;
 
-  background-color: var(--color-background-gray);
-  border: 1px solid var(--color-border-input-footer);
+  background-color: $color-background-gray;
+  border: 1px solid $color-border-input-footer;
 
-  color: var(--color-text-transparent);
+  color: $color-text-transparent;
 }
 
 .footer-form:focus-within .input {
-  border-color: var(--color-border-accent);
+  border-color: $color-border-accent;
 }
 
 .icon-button {
@@ -637,7 +637,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: var(--color-bg-transparent-backdrop);
+  background-color: $color-bg-transparent-backdrop;
 }
 
 .modal {
@@ -648,7 +648,7 @@ body {
   padding: 40px;
   width: 528px;
 
-  background-color: var(--color-background-white);
+  background-color: $color-background-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -674,11 +674,11 @@ body {
 
 .close,
 .field__icon {
-  transition: fill var(--transition-duration-timing);
+  transition: fill $transition-duration-timing;
 }
 
 .modal .btn-close:hover .close {
-  fill: var(--color-fill-accent);
+  fill: $color-fill-accent;
 }
 
 .is-hidden {
@@ -718,7 +718,7 @@ body {
 
   padding: 11px 42px;
 
-  border: 1px solid var(--color-border-input);
+  border: 1px solid $color-border-input;
 }
 
 .field__wrapper {
@@ -729,15 +729,15 @@ body {
 }
 .field__input,
 .field__comments {
-  transition: border-color var(--transition-duration-timing);
+  transition: border-color $transition-duration-timing;
 }
 
 .field:focus-within .input {
-  border-color: var(--color-border-accent);
+  border-color: $color-border-accent;
 }
 
 .field__wrapper:focus-within .field__icon {
-  fill: var(--color-fill-accent);
+  fill: $color-fill-accent;
 }
 
 .field__icon {
@@ -752,7 +752,7 @@ body {
 
   padding: 12px 16px;
 
-  border: 1px solid var(--color-border-input);
+  border: 1px solid $color-border-input;
 
   font-weight: 400;
   font-size: 12px;
@@ -772,7 +772,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
   text-align: left;
-  color: var(--color-text-second);
+  color: $color-text-second;
 
   cursor: pointer;
 }
@@ -792,13 +792,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--color-text-second);
+  color: $color-text-second;
 }
 
 .field-checkbox__link {
   /* исправляет подчеркивание ссылок в хром */
   text-decoration-skip-ink: none;
-  color: var(--color-text-accent);
+  color: $color-text-accent;
 }
 
 .field-checkbox__checkbox {
@@ -822,11 +822,11 @@ body {
 
   margin-left: -23px;
 
-  border: 2px solid var(--color-border-black);
+  border: 2px solid $color-border-black;
   border-radius: 2px;
 
-  transition: background-color var(--transition-duration-timing),
-    border-color var(--transition-duration-timing);
+  transition: background-color $transition-duration-timing,
+    border-color $transition-duration-timing;
 }
 
 .icon-checked {
@@ -835,7 +835,7 @@ body {
   margin-left: -23px;
   opacity: 0;
 
-  transition: opacity var(--transition-duration-timing);
+  transition: opacity $transition-duration-timing;
 }
 
 .field-checkbox__checkbox:checked ~ .icon-checked {
@@ -843,8 +843,8 @@ body {
 }
 
 .field-checkbox__checkbox:checked + .field-checkbox__box {
-  border-color: var(--color-border-accent);
-  background-color: var(--color-border-accent);
+  border-color: $color-border-accent;
+  background-color: $color-border-accent;
 }
 
 /*============ Страница портфолио =============*/
@@ -854,7 +854,7 @@ body {
 .caption.hide {
   height: 0;
   text-align: center;
-  color: var(--color-text-inverse);
+  color: $color-text-inverse;
 }
 
 /*section-item*/
@@ -876,27 +876,27 @@ body {
   height: 38px;
   padding: 6px 22px;
 
-  font-family: var(--font-family-primary);
+  font-family: $font-family-primary;
   font-weight: 500;
 
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
 
-  background-color: var(--color-backgaround-button);
-  color: var(--color-text-primary);
+  background-color: $color-backgaround-button;
+  color: $color-text-primary;
 
   border-radius: 4px;
   outline: none;
 
-  transition: color var(--transition-duration-timing),
-    background-color var(--transition-duration-timing);
+  transition: color $transition-duration-timing,
+    background-color $transition-duration-timing;
 }
 
 .buttons .btn:hover,
 .buttons .btn:focus {
-  background-color: var(--color-background-accent);
-  color: var(--color-text-inverse);
+  background-color: $color-background-accent;
+  color: $color-text-inverse;
 
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -945,15 +945,15 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: var(--color-bg-transparent-accent);
-  color: var(--color-text-inverse);
+  background-color: $color-bg-transparent-accent;
+  color: $color-text-inverse;
 
   font-size: 18px;
   line-height: 1.55;
 
   padding: 63px 24px;
 
-  transition: transform var(--transition-duration-timing);
+  transition: transform $transition-duration-timing;
 }
 
 .product .item:hover .moving-bg,
