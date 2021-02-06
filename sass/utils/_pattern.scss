@@ -1,0 +1,37 @@
+/*ссылки на социальные сети*/
+%social-network {
+  /* цвет для иконок */
+  color: $color-fill-usual;
+
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  transition: color $transition-duration-timing,
+    background-color $transition-duration-timing;
+}
+
+/*синяя кнопка*/
+%button {
+  display: block;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color-text-inverse;
+  border: 0;
+
+  background-color: $color-background-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+  outline: none;
+}
