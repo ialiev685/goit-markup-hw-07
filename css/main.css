@@ -846,6 +846,7 @@ body {
 }
 
 .buttons .btn {
+  display: inline-block;
   height: 38px;
   padding: 6px 22px;
   font-family: Roboto, sans-serif;
