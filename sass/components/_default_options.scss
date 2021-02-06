@@ -85,7 +85,7 @@ body {
 
 .link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   display: inline-block;
