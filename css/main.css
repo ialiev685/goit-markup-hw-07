@@ -166,7 +166,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,10 +174,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-}
-
-.header .address {
-  margin-left: auto;
 }
 
 /*логотип*/
@@ -232,8 +228,6 @@ body {
 
 /*section-order*/
 .section-order {
-  margin-left: auto;
-  margin-right: auto;
   background-size: cover;
   height: 600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/studio/bg-order.jpg");
@@ -241,16 +235,8 @@ body {
   background-position: center;
 }
 
-.section-order .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.section-order .caption {
+.section-order__caption {
   width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -260,26 +246,57 @@ body {
   text-transform: uppercase;
 }
 
-/*section-skil*/
-.section-skils .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section-order {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section-skils .caption {
-  margin-bottom: 10px;
+.section-order__container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section-order__caption {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+/*section-skil*/
+.section-skils__caption {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.section-skils .text {
+.section-skils__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.section-skils .list {
+.section-skils__item {
+  width: 270px;
+}
+
+.section-skils__icon-skill {
+  padding: 25px 100px 25px 100px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.section-skils__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-skils__caption {
+  margin-bottom: 10px;
+}
+
+.section-skils__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,17 +305,8 @@ body {
           justify-content: space-between;
 }
 
-.section-skils .item {
-  width: 270px;
-}
-
-.section-skils .icon-skill {
+.section-skils__icon-skill {
   margin-bottom: 30px;
-  padding: 25px 100px 25px 100px;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: #f5f4fa;
 }
 
 /*section-direction*/

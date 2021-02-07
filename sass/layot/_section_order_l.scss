@@ -1,0 +1,15 @@
+.section-order {
+  margin-left: auto;
+  margin-right: auto;
+
+  &__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__caption {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+}

@@ -3,14 +3,10 @@
   background-color: $color-background-white;
   border-bottom: 1px solid $color-border-header;
 
-  & .container {
+  &__container {
     display: flex;
     align-items: center;
     height: 80px;
-  }
-
-  & .address {
-    margin-left: auto;
   }
 }
 

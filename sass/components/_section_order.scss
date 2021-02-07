@@ -1,9 +1,6 @@
 /*section-order*/
 
 .section-order {
-  margin-left: auto;
-  margin-right: auto;
-
   background-size: cover;
   height: 600px;
   background-image: linear-gradient(
@@ -14,17 +11,8 @@
     url("../img/studio/bg-order.jpg");
   background-position: center;
 
-  & .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-
-  & .caption {
+  &__caption {
     width: 696px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
 
     color: $color-text-inverse;
 
