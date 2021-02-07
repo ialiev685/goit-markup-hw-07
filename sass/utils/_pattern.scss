@@ -1,35 +1,17 @@
 /*стили ссылок социальных сетей*/
 %social-network {
-  width: 206px;
-  height: 44px;
+  /* цвет для иконок */
+  color: $color-fill-usual;
 
   display: flex;
-  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 
-  & .link {
-    /* цвет для иконок */
-    color: $color-fill-usual;
-
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-
-    transition: color $transition-duration-timing,
-      background-color $transition-duration-timing;
-  }
-
-  & .link:hover,
-  & .link:focus {
-    background-color: $color-background-accent;
-    color: $color-fill-light;
-  }
-
-  & .icon-social {
-    fill: currentColor;
-  }
+  transition: color $transition-duration-timing,
+    background-color $transition-duration-timing;
 }
 
 /*синяя кнопка*/
