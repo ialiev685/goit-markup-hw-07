@@ -63,29 +63,6 @@ body {
 
 /*сылки - социальные сети*/
 
-.social-links {
-  width: 206px;
-  height: 44px;
-
-  display: flex;
-  justify-content: space-between;
-
-  & .link {
-    /*стили ссылок социальных сетей взятые из шаблона*/
-    @extend %social-network;
-  }
-
-  & .link:hover,
-  & .link:focus {
-    background-color: $color-background-accent;
-    color: $color-fill-light;
-  }
-
-  & .icon-social {
-    fill: currentColor;
-  }
-}
-
 /* базовые стили input */
 .input {
   display: inline-block;

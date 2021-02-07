@@ -1,0 +1,32 @@
+.social-links {
+  width: 206px;
+  height: 44px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    /* цвет для иконок */
+    color: $color-fill-usual;
+
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    transition: color $transition-duration-timing,
+      background-color $transition-duration-timing;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $color-background-accent;
+    color: $color-fill-light;
+  }
+
+  &__icon-social {
+    fill: currentColor;
+  }
+}
