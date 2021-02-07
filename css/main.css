@@ -55,24 +55,6 @@ body {
   line-height: 1.19;
 }
 
-/* Отметка о текущей странице */
-.current {
-  position: relative;
-  color: #2196f3;
-}
-
-.current::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  display: inline-block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-}
-
 /*списки*/
 .without-dot {
   list-style: none;
@@ -148,6 +130,24 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav .current {
+  color: #2196f3;
+  position: relative;
+}
+
+/* Отметка о текущей странице */
+.current::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 
 .navigation {
