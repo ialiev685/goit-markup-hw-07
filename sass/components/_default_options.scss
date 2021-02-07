@@ -14,6 +14,8 @@ body {
   padding-right: 15px;
 }
 
+/*текущая страница*/
+
 /*заголовки*/
 .caption {
   margin: 0;
@@ -47,16 +49,6 @@ body {
 .logo {
   font-family: $font-family-primary;
   text-decoration: none;
-}
-
-/*логотип*/
-.logo {
-  color: $color-text-accent;
-
-  font-family: $font-family-second;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 /*списки*/

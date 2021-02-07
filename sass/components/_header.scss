@@ -1,40 +1,67 @@
-/*шапка сайта*/
+/*=============Components=============*/
 
-.header {
-  background-color: $color-background-white;
-  border-bottom: 1px solid $color-border-header;
+/*логотип*/
+.logo {
+  color: $color-text-accent;
 
-  & .container {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
-
-  & .link {
-    display: block;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  & .address {
-    margin-left: auto;
-  }
+  font-family: $font-family-second;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
+/*навигация*/
+
 .site-nav {
-  & .link {
+  &__link {
+    position: relative;
+
     color: $color-text-primary;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color $transition-duration-timing;
   }
 
-  & .current {
+  &__link:hover,
+  &__link:focus {
     color: $color-text-accent;
-    position: relative;
+  }
+
+  .current {
+    color: $color-text-accent;
+  }
+}
+
+/*адрес(телефон и маил)*/
+.address-nav {
+  &__link {
+    color: $color-text-second;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $transition-duration-timing;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $color-text-accent;
+  }
+
+  &__icon-mail,
+  &__icon-smartphone {
+    margin-right: 10px;
+    fill: currentColor;
   }
 }
 
@@ -51,62 +78,4 @@
 
   background-color: $color-text-accent;
   border-radius: 2px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-
-  & .logo {
-    margin-right: 93px;
-  }
-
-  & .second-half.up {
-    color: $color-text-primary;
-  }
-}
-
-.site-nav,
-.address-nav {
-  display: flex;
-
-  & .item:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  & .link {
-    transition: color $transition-duration-timing;
-  }
-  & .link:hover,
-  & .link:focus {
-    color: $color-text-accent;
-  }
-}
-
-.address-nav {
-  & .tel,
-  & .mail {
-    display: flex;
-    align-items: center;
-  }
-
-  & .icon-mail,
-  & .icon-smartphone {
-    margin-right: 10px;
-  }
-
-  & .icon-mail,
-  & .icon-smartphone {
-    fill: currentColor;
-  }
-
-  & .link {
-    color: $color-text-second;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
 }

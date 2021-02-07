@@ -15,6 +15,7 @@ body {
   padding-right: 15px;
 }
 
+/*текущая страница*/
 /*заголовки*/
 .caption {
   margin: 0;
@@ -44,15 +45,6 @@ body {
 .logo {
   font-family: Roboto, sans-serif;
   text-decoration: none;
-}
-
-/*логотип*/
-.logo {
-  color: #2196f3;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 /*списки*/
@@ -98,43 +90,61 @@ body {
   outline: none;
 }
 
-/*шапка сайта*/
-.header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
+/*=============Components=============*/
+/*логотип*/
+.logo {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
-.header .container {
+/*навигация*/
+.site-nav__link {
+  position: relative;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+}
+
+.site-nav .current {
+  color: #2196f3;
+}
+
+/*адрес(телефон и маил)*/
+.address-nav__link {
+  color: #757575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
 }
 
-.header .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header .address {
-  margin-left: auto;
-}
-
-.site-nav .link {
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.site-nav .current {
+.address-nav__link:hover, .address-nav__link:focus {
   color: #2196f3;
-  position: relative;
+}
+
+.address-nav__icon-mail, .address-nav__icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Отметка о текущей странице */
@@ -150,6 +160,60 @@ body {
   border-radius: 2px;
 }
 
+/*Контенер header*/
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.header .address {
+  margin-left: auto;
+}
+
+/*логотип*/
+.navigation_logo {
+  margin-right: 93px;
+}
+
+.logo__top {
+  color: #212121;
+}
+
+/*навигация сайта и адрес*/
+.address-nav,
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.address-nav__item:not(:last-child),
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-nav__link,
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/*адрес*/
+.address {
+  margin-left: auto;
+}
+
+/*навигация*/
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,66 +223,11 @@ body {
           align-items: center;
 }
 
-.navigation .logo {
-  margin-right: 93px;
-}
-
-.navigation .second-half.up {
-  color: #212121;
-}
-
-.site-nav,
-.address-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.site-nav .item:not(:last-child),
-.address-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav .link,
-.address-nav .link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus,
-.address-nav .link:hover,
-.address-nav .link:focus {
-  color: #2196f3;
-}
-
-.address-nav .tel,
-.address-nav .mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.address-nav .icon-mail,
-.address-nav .icon-smartphone {
-  margin-right: 10px;
-}
-
-.address-nav .icon-mail,
-.address-nav .icon-smartphone {
-  fill: currentColor;
-}
-
-.address-nav .link {
-  color: #757575;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+/* Отметка о текущей странице */
+.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*section-order*/
