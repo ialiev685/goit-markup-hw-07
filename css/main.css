@@ -24,6 +24,7 @@ body {
 .button {
   margin-left: auto;
   margin-right: auto;
+  /*стили синей кнопки*/
 }
 
 /*текст/абзац*/
@@ -83,27 +84,6 @@ body {
 }
 
 /*сылки - социальные сети*/
-.social-links {
-  width: 206px;
-  height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.social-links .link:hover,
-.social-links .link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
-.social-links .icon-social {
-  fill: currentColor;
-}
-
 /* базовые стили input */
 .input {
   display: inline-block;
@@ -892,7 +872,18 @@ body {
           transform: translateY(-100%);
 }
 
-/*ссылки на социальные сети*/
+/*стили ссылок социальных сетей*/
+.social-links {
+  width: 206px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .social-links .link {
   /* цвет для иконок */
   color: #afb1b8;
@@ -910,6 +901,16 @@ body {
           justify-content: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.social-links .icon-social {
+  fill: currentColor;
 }
 
 /*синяя кнопка*/

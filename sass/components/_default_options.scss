@@ -24,6 +24,7 @@ body {
 .button {
   margin-left: auto;
   margin-right: auto;
+  /*стили синей кнопки*/
   @extend %button;
 }
 
@@ -92,25 +93,7 @@ body {
 /*сылки - социальные сети*/
 
 .social-links {
-  width: 206px;
-  height: 44px;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-links .link {
   @extend %social-network;
-}
-
-.social-links .link:hover,
-.social-links .link:focus {
-  background-color: $color-background-accent;
-  color: $color-fill-light;
-}
-
-.social-links .icon-social {
-  fill: currentColor;
 }
 
 /* базовые стили input */
