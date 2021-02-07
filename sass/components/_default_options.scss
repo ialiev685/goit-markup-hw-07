@@ -60,24 +60,23 @@ body {
 }
 
 /* Отметка о текущей странице */
-.link.current {
+.current {
   position: relative;
 
   color: $color-text-accent;
-}
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
 
-.link.current::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 4px;
 
-  display: inline-block;
-  content: "";
-  width: 100%;
-  height: 4px;
-
-  background-color: $color-text-accent;
-  border-radius: 2px;
+    background-color: $color-text-accent;
+    border-radius: 2px;
+  }
 }
 
 /*списки*/

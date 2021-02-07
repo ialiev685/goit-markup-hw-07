@@ -56,12 +56,12 @@ body {
 }
 
 /* Отметка о текущей странице */
-.link.current {
+.current {
   position: relative;
   color: #2196f3;
 }
 
-.link.current::after {
+.current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
