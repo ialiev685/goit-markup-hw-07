@@ -1,4 +1,7 @@
 @import "utils/variables";
+@import "components/social-network-links";
+@import "components/logo";
+
 @import "components/default_options";
 @import "components/header";
 @import "layot/header_l";
@@ -11,9 +14,9 @@
 @import "components/section-team";
 @import "layot/section_team_l";
 @import "components/section-clients";
+@import "layot/section_clients_l";
 @import "components/footer";
+@import "layot/footer_l";
 @import "components/modal_window";
 @import "components/section-items";
 @import "utils/pattern";
-
-@import "components/social-network-links";

@@ -1,15 +1,3 @@
-/*=============Components=============*/
-
-/*логотип*/
-.logo {
-  color: $color-text-accent;
-
-  font-family: $font-family-second;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 /*навигация*/
 
 .site-nav {
@@ -34,6 +22,11 @@
   .current {
     color: $color-text-accent;
   }
+}
+
+/*логоип*/
+.navigation__half-logo {
+  color: $color-text-primary;
 }
 
 /*адрес(телефон и маил)*/

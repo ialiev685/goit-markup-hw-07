@@ -1,24 +1,14 @@
 /*подвал сайта*/
 .footer {
   background-color: $color-background-gray;
+}
 
-  & .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    display: flex;
-  }
-
-  & .logo {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  & .second-half.down {
+.container-address {
+  &__half-logo {
     color: $color-text-inverse;
   }
 
-  & .text {
+  &__text {
     color: $color-text-inverse;
 
     width: 231px;
@@ -27,44 +17,31 @@
     font-size: 14px;
     line-height: 1.71;
   }
-}
 
-/*контейнер с адресом*/
-.container-address {
-  margin-right: 70px;
-
-  & .link {
+  &__link {
     color: $color-text-transparent;
     display: block;
   }
 }
 
-/*контейнер социальные сети*/
-.container-social {
-  margin-right: 93px;
-
-  & .link {
+/*ссылки на социальные сети*/
+.social-links {
+  &__link {
     background-color: $color-bg-transparent-social;
   }
 
-  & .icon-social {
+  &__icon-social--white-letter {
     fill: $color-fill-light;
   }
 }
 
 /*контейнер подписки*/
-
 .container-subscribe {
-  .footer-form {
-    display: flex;
-  }
-
-  .subscribe-field__input {
+  &__input {
     width: 358px;
     height: 50px;
 
     padding: 15px 16px;
-    margin-right: 12px;
 
     background-color: $color-background-gray;
     border: 1px solid $color-border-input-footer;
@@ -92,7 +69,7 @@
 .container-subscribe {
   margin-top: 12px;
 
-  & .text {
+  &__text {
     margin-bottom: 20px;
 
     font-weight: 700;

@@ -1,4 +1,52 @@
 @charset "UTF-8";
+.social-links {
+  width: 206px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-links__link {
+  /* цвет для иконок */
+  color: #afb1b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links__link:hover, .social-links__link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.social-links__icon-social {
+  fill: currentColor;
+}
+
+/*логотип*/
+.logo {
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 body {
   letter-spacing: 0.03em;
   background-color: #ffffff;
@@ -65,16 +113,6 @@ body {
   outline: none;
 }
 
-/*=============Components=============*/
-/*логотип*/
-.logo {
-  color: #2196f3;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 /*навигация*/
 .site-nav__link {
   position: relative;
@@ -93,6 +131,11 @@ body {
 
 .site-nav .current {
   color: #2196f3;
+}
+
+/*логоип*/
+.navigation__half-logo {
+  color: #212121;
 }
 
 /*адрес(телефон и маил)*/
@@ -154,10 +197,6 @@ body {
 /*логотип*/
 .navigation_logo {
   margin-right: 93px;
-}
-
-.logo__top {
-  color: #212121;
 }
 
 /*навигация сайта и адрес*/
@@ -403,29 +442,14 @@ body {
 }
 
 /*Постоянные клиенты*/
-.section-clients .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-clients .caption {
-  margin-bottom: 50px;
+.section-clients__caption {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-.section-clients .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.section-clients .link {
+.section-clients__link {
   /* цвет для иконок - базовый*/
   color: #afb1b8;
   display: -webkit-inline-box;
@@ -445,15 +469,32 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-clients .link:hover,
-.section-clients .link:focus {
+.section-clients__link:hover, .section-clients__link:focus {
   border-color: #2196f3;
   /* цвет для иконок при наведении*/
   color: #2196f3;
 }
 
-.section-clients .icon-client {
+.section-clients__icon-client {
   fill: currentColor;
+}
+
+.section-clients__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-clients__caption {
+  margin-bottom: 50px;
+}
+
+.section-clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*подвал сайта*/
@@ -461,24 +502,11 @@ body {
   background-color: #2f303a;
 }
 
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer .logo {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer .second-half.down {
+.container-address__half-logo {
   color: #ffffff;
 }
 
-.footer .text {
+.container-address__text {
   color: #ffffff;
   width: 231px;
   font-style: normal;
@@ -487,41 +515,25 @@ body {
   line-height: 1.71;
 }
 
-/*контейнер с адресом*/
-.container-address {
-  margin-right: 70px;
-}
-
-.container-address .link {
+.container-address__link {
   color: rgba(255, 255, 255, 0.6);
   display: block;
 }
 
-/*контейнер социальные сети*/
-.container-social {
-  margin-right: 93px;
-}
-
-.container-social .link {
+/*ссылки на социальные сети*/
+.social-links__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.container-social .icon-social {
+.social-links__icon-social--white-letter {
   fill: #ffffff;
 }
 
 /*контейнер подписки*/
-.container-subscribe .footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container-subscribe .subscribe-field__input {
+.container-subscribe__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
@@ -553,14 +565,49 @@ body {
   margin-top: 12px;
 }
 
-.container-social .text,
-.container-subscribe .text {
+.container-social__text,
+.container-subscribe__text {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/*Общий подвал*/
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*контейнер с адресом*/
+.container-address {
+  margin-right: 70px;
+}
+
+.container-address__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*контейнер социальные сети*/
+.container-social {
+  margin-right: 93px;
+}
+
+/*форма*/
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-subscribe__input {
+  margin-right: 12px;
 }
 
 /*=============== модальное окно ===================*/
@@ -919,44 +966,5 @@ body {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-}
-
-.social-links {
-  width: 206px;
-  height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.social-links__link {
-  /* цвет для иконок */
-  color: #afb1b8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links__link:hover, .social-links__link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
-.social-links__icon-social {
-  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

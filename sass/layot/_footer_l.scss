@@ -1,0 +1,35 @@
+/*Общий подвал*/
+.footer {
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+  }
+}
+
+/*контейнер с адресом*/
+.container-address {
+  margin-right: 70px;
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*контейнер социальные сети*/
+.container-social {
+  margin-right: 93px;
+}
+
+/*форма*/
+.footer-form {
+  display: flex;
+}
+
+.container-subscribe {
+  &__input {
+    margin-right: 12px;
+  }
+}

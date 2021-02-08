@@ -1,25 +1,13 @@
 /*Постоянные клиенты*/
 .section-clients {
-  & .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  & .caption {
-    margin-bottom: 50px;
-
+  &__caption {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
   }
 
-  & .list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  & .link {
+  &__link {
     /* цвет для иконок - базовый*/
     color: $color-fill-usual;
 
@@ -35,14 +23,14 @@
       border-color $transition-duration-timing;
   }
 
-  & .link:hover,
-  & .link:focus {
+  &__link:hover,
+  &__link:focus {
     border-color: $color-fill-accent;
     /* цвет для иконок при наведении*/
     color: $color-fill-accent;
   }
 
-  & .icon-client {
+  &__icon-client {
     fill: currentColor;
   }
 }
