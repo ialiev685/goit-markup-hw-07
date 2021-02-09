@@ -36,7 +36,7 @@
 }
 
 /*контейнер подписки*/
-.container-subscribe {
+.footer-form {
   &__input {
     width: 358px;
     height: 50px;
@@ -49,17 +49,13 @@
     color: $color-text-transparent;
   }
 
-  .footer-form:focus-within .input {
-    border-color: $color-border-accent;
-  }
-
-  .icon-button {
+  &__icon-button {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .icon-plane {
+  &__icon-plane {
     margin-left: 10px;
   }
 }

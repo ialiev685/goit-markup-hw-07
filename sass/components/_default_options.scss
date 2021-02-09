@@ -21,15 +21,6 @@ body {
   margin: 0;
 }
 
-/* стиль кнопки button вызова модального окна и отправки */
-
-.button {
-  margin-left: auto;
-  margin-right: auto;
-  /*стили синей кнопки взятые из шаблона*/
-  @extend %button;
-}
-
 /*текст/абзац*/
 .text {
   margin: 0;
@@ -59,14 +50,4 @@ body {
 .list {
   margin: 0;
   padding: 0;
-}
-
-/*сылки - социальные сети*/
-
-/* базовые стили input */
-.input {
-  display: inline-block;
-
-  border-radius: 4px;
-  outline: none;
 }

@@ -18,28 +18,14 @@
   pointer-events: none;
 }
 
-/*анимация иконок*/
-.close,
-.field__icon {
-  transition: fill $transition-duration-timing;
-}
-
 /*модальное окно*/
-
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  padding: 40px;
   width: 528px;
 
   background-color: $color-background-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  transform: translate(-50%, -50%);
 
   &__btn-close {
     position: absolute;
@@ -59,7 +45,11 @@
     cursor: pointer;
   }
 
-  &__btn-close:hover .close {
+  &__close {
+    transition: fill $transition-duration-timing;
+  }
+
+  &__btn-close:hover &__close {
     fill: $color-fill-accent;
   }
 
@@ -68,25 +58,16 @@
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
-
-    margin-bottom: 12px;
   }
 }
 
+/*форма*/
 .modal-form {
   text-align: center;
 
-  .field--mb-10 {
-    margin-bottom: 10px;
+  &__field {
+    display: block;
   }
-
-  .field--mb-20 {
-    margin-bottom: 20px;
-  }
-}
-
-.field {
-  display: block;
 
   &__label {
     display: block;
@@ -102,7 +83,6 @@
 
     cursor: pointer;
   }
-
   &__input {
     width: 448px;
     height: 40px;
@@ -110,6 +90,26 @@
     padding: 11px 42px;
 
     border: 1px solid $color-border-input;
+    transition: border-color $transition-duration-timing;
+  }
+
+  &__wrapper-input {
+    position: relative;
+
+    display: block;
+    height: 40px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
+    transition: fill $transition-duration-timing;
+  }
+
+  &__wrapper-input:focus-within &__icon {
+    fill: $color-fill-accent;
   }
 
   &__comments {
@@ -126,46 +126,22 @@
     letter-spacing: 0.01em;
 
     resize: none;
-  }
 
-  &__wrapper {
-    position: relative;
-
-    display: block;
-    height: 40px;
-  }
-
-  &__icon {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-  }
-
-  &__input,
-  &__comments {
     transition: border-color $transition-duration-timing;
-  }
-
-  &:focus-within .input {
-    border-color: $color-border-accent;
-  }
-
-  &__wrapper:focus-within .field__icon {
-    fill: $color-fill-accent;
   }
 }
 
 /* чекбокс */
-.field-checkbox {
-  display: inline-flex;
-  align-items: center;
+.modal-form {
+  &__field-checkbox {
+    display: inline-flex;
+    align-items: center;
 
-  padding-left: 23px;
-  margin-bottom: 30px;
+    padding-left: 23px;
 
-  cursor: pointer;
-
-  &__label,
+    cursor: pointer;
+  }
+  &__label-checkbox,
   &__link {
     font-weight: 400;
     font-size: 14px;
@@ -192,7 +168,7 @@
     overflow: hidden;
   }
 
-  &__box {
+  &__box-checkbox {
     position: absolute;
 
     width: 16px;
@@ -207,7 +183,7 @@
       border-color $transition-duration-timing;
   }
 
-  .icon-checked {
+  &__icon-checked {
     position: absolute;
 
     margin-left: -23px;
@@ -216,11 +192,11 @@
     transition: opacity $transition-duration-timing;
   }
 
-  &__checkbox:checked ~ .icon-checked {
+  &__checkbox:checked ~ &__icon-checked {
     opacity: 1;
   }
 
-  &__checkbox:checked + .field-checkbox__box {
+  &__checkbox:checked + &__box-checkbox {
     border-color: $color-border-accent;
     background-color: $color-border-accent;
   }

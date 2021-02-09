@@ -1,0 +1,14 @@
+.input {
+  display: inline-block;
+
+  border-radius: 4px;
+  outline: none;
+
+  //   &:focus-within  .input {
+  //     border-color: $color-border-accent;
+  //   }
+
+  &:focus {
+    border-color: $color-border-accent;
+  }
+}
