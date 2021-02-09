@@ -21,38 +21,51 @@
     <!--шапка-->
     <header class="header portfolio">
       <!--меню-->
-      <div class="container">
+      <div class="container header__container">
         <nav class="navigation">
-          <a href="/" class="logo"
-            >Web<span class="second-half up">Studio</span></a
+          <a href="/" class="logo navigation_logo"
+            >Web<span class="navigation__half-logo">Studio</span></a
           >
           <ul class="site-nav without-dot list">
-            <li class="item"><a class="link" href="index.html">Студия</a></li>
-            <li class="item">
-              <a class="link current" href="portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="link site-nav__link" href="index.html">Студия</a>
             </li>
-            <li class="item"><a class="link" href="/">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="link site-nav__link current" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="link site-nav__link" href="/">Контакты</a>
+            </li>
           </ul>
         </nav>
         <!--/меню-->
         <!--адрес-->
         <address class="address">
           <ul class="address-nav without-dot list">
-            <li class="item">
-              <a class="link mail" href="mailto:info@devstudio.com"
-                ><svg class="icon-mail" width="16" height="12">
+            <li class="address-nav__item">
+              <a
+                class="link address-nav__link mail"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="address-nav__icon-mail" width="16" height="12">
                   <use href="./icon/symbol-defs.svg#icon-mail"></use>
                 </svg>
-                info@devstudio.com
-              </a>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="item">
-              <a class="link tel" href="tel:+380961111111"
-                ><svg class="icon-smartphone" width="10" height="16">
+            <li class="address-nav__item">
+              <a class="link address-nav__link tel" href="tel:+380961111111">
+                <svg
+                  class="address-nav__icon-smartphone"
+                  width="10"
+                  height="16"
+                >
                   <use href="./icon/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
-                +38 096 111 11 11
-              </a>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
@@ -63,177 +76,211 @@
     <!--контент сайта-->
     <main>
       <section class="section-item">
-        <div class="container">
-          <h1 class="caption hide">Наше портфолио</h1>
-          <ul class="buttons without-dot list">
-            <li class="item"><button class="btn">Все</button></li>
-            <li class="item"><button class="btn">Веб-сайты</button></li>
-            <li class="item"><button class="btn">Приложения</button></li>
-            <li class="item"><button class="btn">Дизайн</button></li>
-            <li class="item"><button class="btn">Маркетинг</button></li>
+        <div class="container section-item__container">
+          <h1 class="caption section-item__caption hide">Наше портфолио</h1>
+          <ul class="section-item__filters without-dot list">
+            <li class="">
+              <button class="btn section-item__btn">Все</button>
+            </li>
+            <li class="">
+              <button class="btn section-item__btn">Веб-сайты</button>
+            </li>
+            <li class="">
+              <button class="btn section-item__btn">Приложения</button>
+            </li>
+            <li class="">
+              <button class="btn section-item__btn">Дизайн</button>
+            </li>
+            <li class="">
+              <button class="btn section-item__btn">Маркетинг</button>
+            </li>
           </ul>
-          <ul class="product list without-dot">
-            <li class="item">
-              <div class="picture">
+          <ul class="section-item__product list without-dot">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/tecnocratico.jpg"
                   alt="Технокряк"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Технокряк</h2>
-                <p class="text">Веб-сайт</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">Технокряк</h2>
+                <p class="text section-item__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/poster.jpg"
                   alt="Постер"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Постер New Orlean vs Golden Star</h2>
-                <p class="text">Дизайн</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="text section-item__text">Дизайн</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/resturant-seafood.jpg"
                   alt="Лэйбл ресторана"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Ресторан Seafood</h2>
-                <p class="text">Приложение</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">Ресторан Seafood</h2>
+                <p class="text section-item__text">Приложение</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/project-prime.jpg"
                   alt="Наушники"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Проект Prime</h2>
-                <p class="text">Маркетинг</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">Проект Prime</h2>
+                <p class="text section-item__text">Маркетинг</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/project-boxes.jpg"
                   alt="Коробки"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Проект Boxes</h2>
-                <p class="text">Приложение</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">Проект Boxes</h2>
+                <p class="text section-item__text">Приложение</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/web-site.jpg"
                   alt="Монитор"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Inspiration has no Borders</h2>
-                <p class="text">Веб-сайт</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">
+                  Inspiration has no Borders
+                </h2>
+                <p class="text section-item__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/edizione-LE.jpg"
                   alt="Журнал"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Издание Limited Edition</h2>
-                <p class="text">Дизайн</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">
+                  Издание Limited Edition
+                </h2>
+                <p class="text section-item__text">Дизайн</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/project-lab.jpg"
                   alt="Бирка"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Проект LAB</h2>
-                <p class="text">Маркетинг</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">Проект LAB</h2>
+                <p class="text section-item__text">Маркетинг</p>
               </div>
             </li>
-            <li class="item">
-              <div class="picture">
+            <li class="section-item__item">
+              <div class="section-item__picture">
                 <img
                   src="./img/portfolio/bussines.jpg"
                   alt="Планшет"
                   width="370"
                   height="294"
                 />
-                <p class="text moving-bg">
+                <p
+                  class="text section-item__text section-item__text--moving-bg"
+                >
                   Хочешь избежать критики — ничего не делай, ничего не говори и
                   будь никем.
                 </p>
               </div>
-              <div class="container-title">
-                <h2 class="caption">Growing Business</h2>
-                <p class="text">Приложение</p>
+              <div class="section-item__container-title">
+                <h2 class="caption section-item__caption">Growing Business</h2>
+                <p class="text section-item__text">Приложение</p>
               </div>
             </li>
           </ul>
@@ -243,52 +290,74 @@
     <!--/контент сайта-->
     <!--Подвал-->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="container-address">
           <!-- логотип -->
-          <a class="logo" href="/"
-            >Web<span class="second-half down">Studio</span></a
+          <a class="logo container-address__logo" href="/"
+            >Web<span class="container-address__half-logo">Studio</span></a
           >
           <!-- /логотип -->
           <!-- адресс -->
           <address class="contacts">
-            <p class="text">
+            <p class="text container-address__text">
               г. Киев, пр-т Леси Украинки, 26
-              <a class="link" href="mailto:info@example.com"
+              <a
+                class="link container-address__link"
+                href="mailto:info@example.com"
                 >info@example.com</a
               >
-              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="link container-address__link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
             </p>
           </address>
           <!-- /адресс -->
         </div>
         <div class="container-social">
-          <p class="text">присоединяйтесь</p>
-          <ul class="list without-dot social-links">
+          <p class="text container-social__text">присоединяйтесь</p>
+          <ul
+            class="list without-dot social-links container-social__social-links"
+          >
             <li>
-              <a class="link" href="#">
-                <svg class="icon-social" width="20" height="20">
+              <a class="link social-links__link" href="#">
+                <svg
+                  class="social-links__icon-social social-links__icon-social--white-letter"
+                  width="20"
+                  height="20"
+                >
                   <use href="./icon/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link" href="#"
-                ><svg class="icon-social" width="20" height="20">
+              <a class="link social-links__link" href="#"
+                ><svg
+                  class="social-links__icon-social social-links__icon-social--white-letter"
+                  width="20"
+                  height="20"
+                >
                   <use href="./icon/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link" href="#"
-                ><svg class="icon-social" width="20" height="20">
+              <a class="link social-links__link" href="#"
+                ><svg
+                  class="social-links__icon-social social-links__icon-social--white-letter"
+                  width="20"
+                  height="20"
+                >
                   <use href="./icon/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link" href="#"
-                ><svg class="icon-social" width="20" height="20">
+              <a class="link social-links__link" href="#"
+                ><svg
+                  class="social-links__icon-social social-links__icon-social--white-letter"
+                  width="20"
+                  height="20"
+                >
                   <use href="./icon/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -296,17 +365,17 @@
           </ul>
         </div>
         <div class="container-subscribe">
-          <p class="text">Подпишитесь на рассылку</p>
+          <p class="text container-subscribe__text">Подпишитесь на рассылку</p>
           <form class="footer-form" action="#" autocomplete="off">
             <input
-              class="input subscribe-field__input"
+              class="input footer-form__input"
               placeholder="E-mail"
               type="email"
               name="subscribe-mail"
             />
-            <button class="button icon-button" type="submit">
+            <button class="button footer-form__icon-button" type="submit">
               Подписаться
-              <svg width="24" height="24" class="icon-plane">
+              <svg width="24" height="24" class="footer-form__icon-plane">
                 <use href="./icon/symbol-defs.svg#icon-plane"></use>
               </svg>
             </button>
