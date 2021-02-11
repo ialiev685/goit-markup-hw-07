@@ -21,6 +21,13 @@
 /*контейнер социальные сети*/
 .container-social {
   margin-right: 93px;
+  /*Кнопки соццальных сетей*/
+  &__social-links {
+    width: 206px;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*форма*/

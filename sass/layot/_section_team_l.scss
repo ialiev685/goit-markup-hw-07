@@ -21,6 +21,11 @@
   &__social-links {
     margin-left: auto;
     margin-right: auto;
+
+    width: 206px;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   &__caption--main {

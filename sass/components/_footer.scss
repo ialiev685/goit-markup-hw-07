@@ -24,12 +24,11 @@
   }
 }
 
-/*ссылки на социальные сети*/
-.social-links {
-  &__link {
+/*ссылки на социальные сети для футера*/
+.button {
+  &--social-network {
     background-color: $color-bg-transparent-social;
   }
-
   &__icon-social--white-letter {
     fill: $color-fill-light;
   }
