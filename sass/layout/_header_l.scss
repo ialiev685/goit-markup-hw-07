@@ -11,10 +11,14 @@
 }
 
 /*логотип*/
-.navigation_logo {
-  margin-right: 93px;
+.navigation {
+  &__logo {
+    margin-right: 93px;
+  }
+  &__half-logo {
+    color: $color-text-primary;
+  }
 }
-
 /*навигация сайта и адрес*/
 .address-nav,
 .site-nav {

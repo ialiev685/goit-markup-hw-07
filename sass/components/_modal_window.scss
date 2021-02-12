@@ -62,7 +62,7 @@
 }
 
 /*форма*/
-.modal-form {
+.modal {
   text-align: center;
 
   &__field {
@@ -83,34 +83,6 @@
 
     cursor: pointer;
   }
-  &__input {
-    width: 448px;
-    height: 40px;
-
-    padding: 11px 42px;
-
-    border: 1px solid $color-border-input;
-    transition: border-color $transition-duration-timing;
-  }
-
-  &__wrapper-input {
-    position: relative;
-
-    display: block;
-    height: 40px;
-  }
-
-  &__icon {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-
-    transition: fill $transition-duration-timing;
-  }
-
-  &__wrapper-input:focus-within &__icon {
-    fill: $color-fill-accent;
-  }
 
   &__comments {
     width: 448px;
@@ -129,75 +101,9 @@
 
     transition: border-color $transition-duration-timing;
   }
-}
 
-/* чекбокс */
-.modal-form {
-  &__field-checkbox {
-    display: inline-flex;
-    align-items: center;
-
-    padding-left: 23px;
-
-    cursor: pointer;
-  }
-  &__label-checkbox,
-  &__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: $color-text-second;
-  }
-
-  &__link {
-    /* исправляет подчеркивание ссылок в хром */
-    text-decoration-skip-ink: none;
-    color: $color-text-accent;
-  }
-
-  &__checkbox {
-    /* appearance: none; */
-    /* скрыть элемент */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  &__box-checkbox {
-    position: absolute;
-
-    width: 16px;
-    height: 15px;
-
-    margin-left: -23px;
-
-    border: 2px solid $color-border-black;
-    border-radius: 2px;
-
-    transition: background-color $transition-duration-timing,
-      border-color $transition-duration-timing;
-  }
-
-  &__icon-checked {
-    position: absolute;
-
-    margin-left: -23px;
-    opacity: 0;
-
-    transition: opacity $transition-duration-timing;
-  }
-
-  &__checkbox:checked ~ &__icon-checked {
-    opacity: 1;
-  }
-
-  &__checkbox:checked + &__box-checkbox {
-    border-color: $color-border-accent;
-    background-color: $color-border-accent;
+  &__button--primary {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

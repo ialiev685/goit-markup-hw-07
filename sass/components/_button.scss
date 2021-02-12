@@ -8,10 +8,10 @@
   outline: none;
   border: 0;
 
+  cursor: pointer;
+
   /*синяя кнопка*/
-  &--send {
-    margin-left: auto;
-    margin-right: auto;
+  &--primary {
     display: block;
     width: 200px;
     height: 50px;
@@ -24,8 +24,6 @@
 
     background-color: $color-background-accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    cursor: pointer;
   }
 
   /*Кнопки фильтр*/
@@ -80,5 +78,9 @@
 
   &__icon-social {
     fill: currentColor;
+  }
+
+  &__icon-social--white-letter {
+    fill: $color-fill-light;
   }
 }

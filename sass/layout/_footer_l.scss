@@ -1,0 +1,102 @@
+/*============ footer ============*/
+.footer {
+  background-color: $color-background-gray;
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+  }
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    margin-right: 12px;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+
+    padding: 15px 16px;
+
+    background-color: $color-background-gray;
+    border: 1px solid $color-border-input-footer;
+
+    color: $color-text-transparent;
+  }
+
+  &__icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-plane {
+    margin-left: 10px;
+  }
+
+  &__button--social-network {
+    background-color: $color-bg-transparent-social;
+  }
+}
+
+/*контейнер с адресом*/
+.container-address {
+  margin-right: 70px;
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__half-logo {
+    color: $color-text-inverse;
+  }
+
+  &__text {
+    color: $color-text-inverse;
+
+    width: 231px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__link {
+    color: $color-text-transparent;
+    display: block;
+  }
+}
+
+/*контейнер социальные сети*/
+.container-social {
+  margin-right: 93px;
+
+  /*Кнопки соццальных сетей*/
+  &__social-links {
+    width: 206px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*общие параметры контейнера социальные сети и подписки*/
+.container-social,
+.container-subscribe {
+  margin-top: 12px;
+
+  &__text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $color-text-inverse;
+  }
+}

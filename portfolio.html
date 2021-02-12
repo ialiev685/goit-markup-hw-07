@@ -23,7 +23,7 @@
       <!--меню-->
       <div class="container header__container">
         <nav class="navigation">
-          <a href="/" class="logo navigation_logo"
+          <a href="/" class="logo navigation__logo"
             >Web<span class="navigation__half-logo">Studio</span></a
           >
           <ul class="site-nav without-dot list">
@@ -315,11 +315,12 @@
         </div>
         <div class="container-social">
           <p class="text container-social__text">присоединяйтесь</p>
-          <ul
-            class="list without-dot  container-social__social-links"
-          >
+          <ul class="list without-dot container-social__social-links">
             <li>
-              <a class="link button button--social-network" href="#">
+              <a
+                class="link button button--social-network footer__button--social-network"
+                href="#"
+              >
                 <svg
                   class="button__icon-social button__icon-social--white-letter"
                   width="20"
@@ -330,7 +331,9 @@
               </a>
             </li>
             <li>
-              <a class="link button button--social-network" href="#"
+              <a
+                class="link button button--social-network footer__button--social-network"
+                href="#"
                 ><svg
                   class="button__icon-social button__icon-social--white-letter"
                   width="20"
@@ -341,7 +344,9 @@
               </a>
             </li>
             <li>
-              <a class="link button button--social-network" href="#"
+              <a
+                class="link button button--social-network footer__button--social-network"
+                href="#"
                 ><svg
                   class="button__icon-social button__icon-social--white-letter"
                   width="20"
@@ -352,7 +357,9 @@
               </a>
             </li>
             <li>
-              <a class="link button button--social-network" href="#"
+              <a
+                class="link button button--social-network footer__button--social-network"
+                href="#"
                 ><svg
                   class="button__icon-social button__icon-social--white-letter"
                   width="20"
@@ -366,19 +373,19 @@
         </div>
         <div class="container-subscribe">
           <p class="text container-subscribe__text">Подпишитесь на рассылку</p>
-          <form class="footer-form" action="#" autocomplete="off">
+          <form class="footer__form" action="#" autocomplete="off">
             <input
-              class="input footer-form__input"
+              class="input footer__input"
               placeholder="E-mail"
               type="email"
               name="subscribe-mail"
             />
             <button
-              class="button button--send footer-form__icon-button"
+              class="button button--primary footer__icon-button"
               type="submit"
             >
               Подписаться
-              <svg width="24" height="24" class="footer-form__icon-plane">
+              <svg width="24" height="24" class="footer__icon-plane">
                 <use href="./icon/symbol-defs.svg#icon-plane"></use>
               </svg>
             </button>
