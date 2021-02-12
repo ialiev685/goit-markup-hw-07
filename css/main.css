@@ -884,10 +884,6 @@ body {
 
 /*============ Страница портфолио ============*/
 /*section-item*/
-.section-item {
-  /* Фильтр */
-}
-
 .section-item__caption {
   font-weight: 700;
   font-size: 18px;
