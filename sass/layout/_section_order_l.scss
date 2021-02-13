@@ -1,6 +1,7 @@
 .section-order {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
   &__container {
     padding-top: 200px;
@@ -11,10 +12,5 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-  }
-
-  &__button--primary {
-    margin-left: auto;
-    margin-right: auto;
   }
 }

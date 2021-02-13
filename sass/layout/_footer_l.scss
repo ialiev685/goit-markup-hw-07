@@ -11,35 +11,27 @@
     display: flex;
   }
 
-  &__input {
-    margin-right: 12px;
-  }
+  // &__input {
+  //   width: 358px;
+  //   height: 50px;
 
-  &__input {
-    width: 358px;
-    height: 50px;
+  //   padding: 15px 16px;
 
-    padding: 15px 16px;
+  //   background-color: $color-background-gray;
+  //   border: 1px solid $color-border-input-footer;
 
-    background-color: $color-background-gray;
-    border: 1px solid $color-border-input-footer;
+  //   color: $color-text-transparent;
+  // }
 
-    color: $color-text-transparent;
-  }
+  // }
 
-  &__icon-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__icon-plane {
-    margin-left: 10px;
-  }
-
-  &__button--social-network {
-    background-color: $color-bg-transparent-social;
-  }
+  // &__button--social-network {
+  //   background-color: $color-bg-transparent-social;
+  // }
+}
+/*отступ input"*/
+.input {
+  margin-right: 12px;
 }
 
 /*контейнер с адресом*/
