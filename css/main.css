@@ -60,11 +60,10 @@
 .button--social-network {
   /* цвет для иконок */
   color: #afb1b8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 44px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 12px;
   border-radius: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -81,16 +80,18 @@
   color: #ffffff;
 }
 
+.button--social-network-inverse {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
 .button__icon-social {
   fill: currentColor;
 }
 
-.button__icon-social--white-letter {
-  fill: #ffffff;
-}
-
 .input {
   position: relative;
+  padding: 11px 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -100,19 +101,21 @@
 
 .input__control {
   width: 100%;
-  padding: 11px 42px;
+  padding-left: 42px;
   border: none;
   outline: none;
 }
 
 .input__control--size-l {
-  padding: 15px 16px;
-  background-color: inherit;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 0px;
+  background-color: inherit;
 }
 
 .input--size-l {
+  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 16px;
 }
 
 .input--message {

@@ -1,6 +1,7 @@
 .input {
   position: relative;
 
+  padding: 11px 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -10,21 +11,22 @@
 
   &__control {
     width: 100%;
-    padding: 11px 42px;
+    padding-left: 42px;
 
     border: none;
     outline: none;
   }
 
   &__control--size-l {
-    padding: 15px 16px;
-
-    background-color: inherit;
     color: $color-text-transparent;
+    padding-left: 0px;
+    background-color: inherit;
   }
 
   &--size-l {
+    width: 358px;
     border: 1px solid $color-transparent-gray-3;
+    padding: 15px 16px;
   }
 
   &--message {

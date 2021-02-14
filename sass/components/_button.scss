@@ -55,9 +55,10 @@
     /* цвет для иконок */
     color: $color-fill-usual;
 
-    display: flex;
-    width: 44px;
-    height: 44px;
+    display: inline-flex;
+    padding: 12px 12px;
+    // width: 44px;
+    // height: 44px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -72,11 +73,12 @@
     color: $color-fill-light;
   }
 
-  &__icon-social {
-    fill: currentColor;
+  &--social-network-inverse {
+    background-color: $color-bg-transparent-social;
+    color: $color-fill-light;
   }
 
-  &__icon-social--white-letter {
-    fill: $color-fill-light;
+  &__icon-social {
+    fill: currentColor;
   }
 }
